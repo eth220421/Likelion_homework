@@ -1,0 +1,13 @@
+#footer {
+    width: 350px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+#footer > span {
+    color: gray;
+}

@@ -1,0 +1,72 @@
+#header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#header span {
+    font-weight: bold;
+}
+
+#header span:hover, #header svg:hover, #header img:hover {
+    cursor: pointer;
+}
+
+#logo {
+    width: 200px;
+}
+
+#tab {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tab > span {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+#empty {
+    width: 400px;
+}
+
+#search {
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search > input[type="text"] {
+    width: 80%;
+    border: none;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+}
+
+#search > input[type="text"]:hover {
+    background-color: #f1f1f1;
+}
+
+#search > svg {
+    width: 10%;
+    background-color: #f1f1f1;
+    margin-right: 10px;
+}
+
+#status {
+    width: 100px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

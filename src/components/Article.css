@@ -1,0 +1,43 @@
+#article {
+    width: 600px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+#article > #left {
+    width: 70%;
+    height: 100%;
+}
+
+#article > #left > #media {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#article > #left > #title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#article > #left > #content {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    margin-top: 10px;
+}
+
+#article > #right {
+    width: 20%;
+    height: 100%;
+}
+
+#article > #right > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
