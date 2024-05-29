@@ -2,9 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Button from "./Button.jsx";
 
 const Signupform = () => {
-  useEffect(() => {
-    alert('우측 상단 "로그인" 클릭 시 로그인으로 이동')
-  },[])
 
   const props = '회원가입';
   const [name, setName] = useState('');

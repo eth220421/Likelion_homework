@@ -60,6 +60,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+#signup span {
+  color: black;
+}
+
 #social {
   display: flex;
   align-items: center;

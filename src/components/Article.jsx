@@ -1,8 +1,6 @@
 import './Article.css';
 
 const Article = ({array}) => {
-
-
     return (
         <div id='article'>
             <div id='left'>

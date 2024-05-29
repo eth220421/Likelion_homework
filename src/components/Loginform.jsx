@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import Button from "./Button";
 
-const Loginform = ({func}) => {
-  useEffect(() => {
-    alert('"이메일로 회원가입" 클릭 시 회원가입으로 이동')
-  }, [])
+import {Link} from 'react-router-dom';
+
+const Loginform = () => {
 
   const props = "로그인";
 
@@ -60,7 +59,7 @@ const Loginform = ({func}) => {
         <Button text={props} />
       </div>
       <div id="signup">
-        <span onClick={func}>이메일로 회원가입</span>
+        <Link to='/signup' style={{textDecoration: 'none'}}><span>이메일로 회원가입</span></Link>
       </div>
       <div id="social">
         <svg

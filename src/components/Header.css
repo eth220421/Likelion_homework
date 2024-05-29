@@ -26,10 +26,11 @@
     justify-content: space-between;
 }
 
-#tab > span {
+#tab span {
     display: inline-block;
     width: 50px;
     text-align: center;
+    color: black;
 }
 
 #empty {
@@ -69,4 +70,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#status span {
+    color: black;
+    font-weight: bold;
 }

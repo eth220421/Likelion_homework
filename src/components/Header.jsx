@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./Header.css";
 
-const Header = ({ status, func }) => {
+import {Link} from 'react-router-dom';
+
+const Header = () => {
   return (
     <div id="header">
       <div id="logo">
@@ -60,8 +62,8 @@ const Header = ({ status, func }) => {
         </svg>
       </div>
       <div id="tab">
-        <span>뉴스</span>
-        <span>교과서</span>
+        <Link to="/news" style={{textDecoration: 'none'}}><span>뉴스</span></Link>
+        <Link to="/bookcase" style={{textDecoration: 'none'}}><span>교과서</span></Link>
       </div>
       <div id="empty"></div>
       <div id="search">
@@ -80,19 +82,7 @@ const Header = ({ status, func }) => {
         </svg>
       </div>
       <div id="status">
-        {status === "로그인" ? (
-          <span onClick={func}>{status}</span>
-        ) : (
-          <>
-            <span>{status}</span>
-            &nbsp;
-            <img
-              src="https://s3-alpha-sig.figma.com/img/56bd/01c3/ee396acdecf45aa83c16732f6aa5107e?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HGgKo5BOKo54Y59rPUZHfEXEsEYRjG5sCdM1ZIrSa9-~n4PNMNfeSZRGK-or7DQ4S7kNUhMvwyq4tugYbNj7xNEXRALIVgzA-yIRU3UbCP0XyFT6wMXWea7vj-73bUtv0ihpBdBYZakRStlTy5rwgHg8OOs9lQNHygmnNGbjYALU0WmzVb-BHGwLwJ5xXullpv7wIjKCyvR0Kcc-dT-M0IqSmKHgcKXyEs6Ll77XCm4Q0J9lPAVbqUfwQZyAkctb16QmATwfGhdLWiLO0QjJ~XDUI4uUkG7CUpAZU4SgBipN6VUZ1OZkVAVn7nEL~7DWB6fX628bFVpHe-3e9Xrmnw__"
-              width={36}
-              height={36}
-            />
-          </>
-        )}
+        <Link to='/' style={{textDecoration: 'none'}}><span>로그인</span></Link>
       </div>
     </div>
   );
